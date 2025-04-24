@@ -9,8 +9,16 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/questionnaire',
-  output: 'export'
+  basePath: '/questionnaire',  // Add the base path here
+  async rewrites() {
+    return [
+      {
+        source: '/questionnaire/:path*',
+        destination: 'https://questionnaire-official.vercel.app/:path*',
+      },
+    ]
+  },
 }
 
 export default nextConfig
+
