@@ -1,8 +1,8 @@
 {
   "name": "my-v0-project",
   "version": "0.1.0",
-  "homepage": "/questionnaire",
   "private": true,
+  "homepage": "/questionnaire",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
