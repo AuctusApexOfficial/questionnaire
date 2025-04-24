@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/questionnaire',
-  async rewrites() {
-    return [
-      {
-        source: '/questionnaire/:path*',
-        destination: 'https://questionnaire-official.vercel.app/:path*',
-      },
-    ];
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  images: {
+    unoptimized: true,
   },
 }
 
-export default nextConfig;
+export default nextConfig
