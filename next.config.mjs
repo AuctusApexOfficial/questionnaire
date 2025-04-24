@@ -9,13 +9,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/questionnaire', // This ensures that the paths are prefixed with /questionnaire
-
+  basePath: '/questionnaire', // This ensures the correct routing for /questionnaire
   async rewrites() {
     return [
       {
-        source: '/questionnaire/:path*',  // Match any URL under /questionnaire
-        destination: 'https://questionnaire-official.vercel.app/:path*',  // Redirect to the questionnaire on Vercel
+        source: '/questionnaire/:path*',  // Match anything under /questionnaire
+        destination: 'https://questionnaire-official.vercel.app/:path*',  // Route to your Vercel deployed questionnaire
       },
     ];
   },
