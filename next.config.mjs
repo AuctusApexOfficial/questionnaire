@@ -9,6 +9,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: '/questionnaire',
+  output: 'export'
 }
 
 export default nextConfig
